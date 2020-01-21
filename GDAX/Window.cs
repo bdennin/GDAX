@@ -12,15 +12,19 @@ namespace GDAX
         public Window(string name, TimeSpan duration)
         {
             this.name = name;
-            this.duration = duration;
+            this.duration = duration.Ticks;
             this.orders = new List<Ticker>();
         }
 
         public void Add(Ticker order)
         {
-            foreach(Ticker element in orders.ToArray())
+            DateTime now = DateTime.UtcNow;
+
+            foreach (Ticker element in orders.ToArray())
             {
-                if(order.Time - element.Time > duration)
+                Int64 diff = now.Ticks - element.Time.Ticks;
+
+                if(diff > duration)
                 {
                     orders.Remove(element);
 
@@ -33,10 +37,6 @@ namespace GDAX
                         volume += element.LastSize;
                     }
                 }
-                else
-                {
-                    break;
-                }
             }
 
             orders.Add(order);
@@ -48,17 +48,20 @@ namespace GDAX
             {
                 volume -= order.LastSize;
             }
-
-            System.Console.WriteLine("{0} Volume : {1}", name, volume);
         }
 
+        public string GetName()
+        {
+            return name;
+        }
+        
         public decimal GetVolume()
         {
             return volume;
         }
 
         private string name;
-        private TimeSpan duration;
+        private Int64 duration;
         private List<Ticker> orders;
         private decimal volume;
     }
