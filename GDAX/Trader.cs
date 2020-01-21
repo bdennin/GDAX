@@ -24,7 +24,7 @@ namespace GDAX
 		public Trader()
 		{
 			path = System.IO.Directory.GetCurrentDirectory() + "\\database.db";
-			
+
 			tickers = new List<Ticker>();
 			client = new CoinbaseProClient();
 
@@ -34,7 +34,7 @@ namespace GDAX
 			channels = new List<ChannelType>();
 
 			anchorPoint = DateTime.UtcNow;
-			
+
 			windows = new List<Window>();
 			windows.Add(new Window("100ms", new TimeSpan(100 * TimeSpan.TicksPerMillisecond)));
 			windows.Add(new Window("500ms", new TimeSpan(500 * TimeSpan.TicksPerMillisecond)));
@@ -142,7 +142,7 @@ namespace GDAX
 			catch (Exception ex)
 			{
 				Console.WriteLine("Exception caught while attempting to read the database.");
-				if(reader != null)
+				if (reader != null)
 				{
 					reader.Close();
 				}
