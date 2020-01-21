@@ -1,0 +1,15 @@
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\GDAX.exe.config
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\GDAX.exe
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\GDAX.pdb
+C:\Users\brand\source\repos\GDAX\GDAX\obj\Debug\GDAX.csprojAssemblyReference.cache
+C:\Users\brand\source\repos\GDAX\GDAX\obj\Debug\GDAX.Properties.Resources.resources
+C:\Users\brand\source\repos\GDAX\GDAX\obj\Debug\GDAX.csproj.GenerateResource.cache
+C:\Users\brand\source\repos\GDAX\GDAX\obj\Debug\GDAX.exe
+C:\Users\brand\source\repos\GDAX\GDAX\obj\Debug\GDAX.pdb
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\CoinbasePro.dll
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\SuperSocket.ClientEngine.dll
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\WebSocket4Net.dll
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\Newtonsoft.Json.dll
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\Serilog.dll
+C:\Users\brand\source\repos\GDAX\GDAX\bin\Debug\CoinbasePro.pdb
+C:\Users\brand\source\repos\GDAX\GDAX\obj\Debug\GDAX.csproj.CopyComplete
